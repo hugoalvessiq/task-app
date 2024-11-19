@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20%;
+  font-family: cursive;
+  font-size: 3em;
+  color: azure;
+}

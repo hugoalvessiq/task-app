@@ -1,0 +1,51 @@
+.user-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.user-detail-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.user-data {
+  font-size: 1.1rem;
+  color: #555;
+  display: flex;
+  margin: 8px 0;
+  width: 100%;
+  gap: 10px;
+  padding: 0 10px 0 10px;
+}
+
+.user-detail-container strong {
+  font-weight: 600;
+  color: #222;
+}
+
+.detail-container {
+  display: flex;
+  align-items: center;
+  width: 93%;
+}
+
+
+.link-container {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .user-detail-container {
+    max-width: 90%;
+    margin: 30% auto;
+  }
+}

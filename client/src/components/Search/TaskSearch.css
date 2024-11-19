@@ -1,0 +1,112 @@
+.modal-content {
+  width: 60%;
+  min-height: 50vh;
+  background-color: white;
+  padding: 20px;
+}
+
+.task-search {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.search-input,
+.completion-select,
+.search-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.section-input {
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  flex: 1;
+}
+
+.cancel-search-button {
+  background-color: rgb(212, 6, 6);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2 ease-in-out;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.cancel-search-button:hover {
+  background-color: #e74c3c;
+}
+
+.completion-select {
+  width: auto;
+}
+
+.search-button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2 ease-in-out;
+}
+
+.search-button:hover {
+  background-color: #3e8e41;
+}
+
+.suggestions-list,
+.result-list {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.results-list {
+  margin-top: 1rem;
+  overflow-y: auto;
+  max-height: 65vh;
+}
+
+.suggestion-item {
+  cursor: pointer;
+  padding: 0.5rem 0.7rem;
+}
+
+.suggestions-list {
+  width: 290px;
+}
+
+.suggestions-item,
+.result-item {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  transform: background-color 0.2s ease-in-out;
+}
+
+.suggestions-item:hover,
+.result-item:hover {
+  background-color: #f5f5f5;
+}
+
+.message {
+  color: #e74c3c;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section-input {
+    flex-direction: column;
+  }
+
+  .results-list {
+    height: 45vh;
+  }
+}

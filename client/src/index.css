@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-seri;
+}
+
+body {
+  background: lightgoldenrodyellow;
+}
+
+.error-message {
+  background-color: #fdd;
+  color: #d00;
+  border: 1px solid #d00;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  text-align: center;
+  z-index: 7;
+  position: fixed;
+  top: 60px;
+}
+
+.success-message {
+  background-color: #b4e6b4;
+  color: darkgreen;
+  border: 1px solid green;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  text-align: center;
+  z-index: 7;
+  position: fixed;
+  top: 60px;
+}
+
+.btn-close {
+  background-color: #c0392b;
+}
+.btn-close:hover {
+  background-color: #e74c3c;
+}
+
+.btn-search {
+  background-color: #ddd;
+  border: 1px solid green;
+  color: green;
+  transition: 0.5s;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-search:hover {
+  background-color: lightgreen;
+  border: none;
+}
+
+.modal {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent shaded background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-modal {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  height: 80vh;
+}
+
+.modal-layout {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.modal-layout input,
+.modal-layout textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.modal-layout label {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.modal-layout label input[type="checkbox"] {
+  margin-left: 10px;
+  width: auto;
+}
+
+.primary-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  margin-right: 10px;
+}
+
+.primary-btn:hover {
+  background-color: #0056b3;
+}
+
+.primary-btn:last-child {
+  background-color: #6c757d;
+}
+
+.primary-btn:last-child:hover {
+  background-color: #5a6268;
+}
+
+.delete-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e74c3c;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+.delete-button:focus {
+  outline: none;
+}
+
+.editTask-form h2 {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .search-modal {
+    width: 90%;
+  }
+}

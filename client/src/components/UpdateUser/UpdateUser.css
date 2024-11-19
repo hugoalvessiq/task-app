@@ -1,0 +1,75 @@
+.update-user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 50px auto;
+}
+
+.update-user-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.28rem;
+}
+
+.update-user-container label {
+  color: rgb(134, 133, 133);
+}
+
+.update-user-container input {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.update-user-container input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+.update:hover {
+  background-color: #3e8e41;
+}
+.update {
+  background-color: #4acf50;
+}
+
+.close {
+  background-color: #c0392b;
+}
+.close:hover {
+  background-color: #e74c3c;
+}
+.btn-container {
+  gap: 30px;
+  margin: 10px 0 30px 0;
+}
+
+.link-update {
+  border: none;
+  background-color: transparent;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #0056b3;
+}
+
+.link-update:hover {
+  color: purple;
+}

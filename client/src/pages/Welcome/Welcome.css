@@ -1,0 +1,51 @@
+.presentation-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #1f1f1f; /* Dark background */
+  color: #f0f0f0; /* Light text */
+  width: 700px;
+  max-width: 90%;
+  margin: auto;
+  border: 4px double #5f4c4c;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+  position: relative;
+  top: 5rem;
+}
+
+.presentation-container h1 {
+  margin-bottom: 10px;
+}
+
+.button-group {
+  margin-top: 90px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #4caf50; /* Green */
+  color: #f0f0f0;
+}
+
+.btn-primary:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+.btn-secondary {
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-left: 30px;
+}
+
+.btn-secondary:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
