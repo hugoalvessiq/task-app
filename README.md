@@ -74,7 +74,7 @@ vite.config.js    # Vite configuration
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/hugoalvessiq/task-app.git
    cd task-app/server
    ```
 2. Install the dependencies:
