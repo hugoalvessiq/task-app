@@ -13,7 +13,7 @@ const logger = require("./middlewares/logger");
 const app = express();
 const port = process.env.PORT || 3500;
 
-// ATTENTION: USE ONLY IN TESTS!!!!!
+// ATTENTION: USE ONLY IN TESTS!!!!! Configure on .env file 'NODE_ENV'
 if (process.env.NODE_ENV === "test") {
   const User = require("./models/User");
   const Task = require("./models/Task");
