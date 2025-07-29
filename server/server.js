@@ -13,24 +13,24 @@ const logger = require("./middlewares/logger");
 const app = express();
 const port = process.env.PORT || 3500;
 
-// ATTENTION: USE ONLY IN TESTS!!!!! Configure on .env file 'NODE_ENV'
-if (process.env.NODE_ENV === "test") {
-  const User = require("./models/User");
-  const Task = require("./models/Task");
+// ATTENTION: USE ONLY IN TESTS!!!!! Configure on .env file 'NODE_ENV="test"'
+// if (process.env.NODE_ENV === "test") {
+//   const User = require("./models/User");
+//   const Task = require("./models/Task");
 
-  const resetDatabase = async (req, res) => {
-    try {
-      await User.deleteMany({});
-      await Task.deleteMany({});
-      res.status(200).send({ message: "Banco de dados resetado para testes" });
-    } catch (error) {
-      res.status(500).send({ error: "Erro ao resetar o banco de dados" });
-    }
-  };
+//   const resetDatabase = async (req, res) => {
+//     try {
+//       await User.deleteMany({});
+//       await Task.deleteMany({});
+//       res.status(200).send({ message: "Banco de dados resetado para testes" });
+//     } catch (error) {
+//       res.status(500).send({ error: "Erro ao resetar o banco de dados" });
+//     }
+//   };
 
-  // Define a rota de reset no ambiente de teste
-  app.use("/reset-database", resetDatabase);
-}
+//   // Define a rota de reset no ambiente de teste
+//   app.use("/reset-database", resetDatabase);
+// }
 
 dbConnect();
 
